@@ -1,20 +1,17 @@
 #include "main.h"
 
-
 /**
- * main - prints _putchar and new line
- * Return: Always 0
- */
+  * main - prints some text with _putchar function
+  * Return: returns 0 with success
+  */
+
 int main(void)
-	 _pitchar('_');
-	 _pitchar('p');
-	 _pitchar('u');
-	 _pitchar('t');
-	 _pitchar('c');
-	 _pitchar('h');
-	 _pitchar('a');
-	 _pitchar('r');
-	 _pitchar('\n');
+{
+	char *putchar;
 
-	 return (0);
+	for (putchar = "_putchar\n"; *putchar != '\0'; putchar++)
+		_putchar(*putchar);
 
+	return (0);
+
+}
